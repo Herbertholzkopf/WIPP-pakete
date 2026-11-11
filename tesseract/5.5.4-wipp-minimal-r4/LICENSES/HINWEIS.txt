@@ -1,0 +1,2 @@
+tesseract.exe enthaelt libjpeg-turbo 3.2.1 (IJG-Lizenz, siehe libjpeg-turbo-LICENSE.md und libjpeg-turbo-README.ijg.txt).
+This software is based in part on the work of the Independent JPEG Group.

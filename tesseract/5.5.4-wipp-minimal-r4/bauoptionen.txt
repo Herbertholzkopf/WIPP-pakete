@@ -1,0 +1,7 @@
+Build r4, -DTESSERACT_DISABLE_DEBUG_FONTS, tessdata/pdf.ttf aus den Tesseract-Quellen
+Tesseract 5.5.4 (Commit 7e548e6eff172f38f97664afe7f7ce40db36c8d6), Leptonica 1.87.0, libpng 1.6.59, zlib 1.3.2, libtiff 4.7.2, libjpeg-turbo 3.2.1
+tessdata_fast 87416418657359cb625c412a48b6e1d6d41c29bd: deu eng osd
+Leptonica: ENABLE_ZLIB=ON ENABLE_PNG=ON ENABLE_GIF=OFF ENABLE_JPEG=ON ENABLE_TIFF=ON ENABLE_WEBP=OFF ENABLE_OPENJPEG=OFF
+libtiff: ccitt lzw packbits zlib jpeg; aus: old-jpeg jpeg12 lzma zstd webp jbig lerc libdeflate pixarlog thunder next logluv mdi cxx
+libjpeg-turbo: statisch, SIMD, ohne TurboJPEG-API und Werkzeuge
+Tesseract: -DSW_BUILD=OFF -DOPENMP_BUILD=OFF -DGRAPHICS_DISABLED=ON -DBUILD_TRAINING_TOOLS=OFF -DBUILD_TESTS=OFF -DDISABLE_TIFF=OFF -DDISABLE_ARCHIVE=ON -DDISABLE_CURL=ON -DENABLE_LTO=OFF -DENABLE_NATIVE=OFF -DENABLE_PRECOMPILED_HEADERS=OFF -DENABLE_CCACHE=OFF -DENABLE_UNITY_BUILD=OFF -DINSTALL_CONFIGS=OFF -DLeptonica_DIR=<prefix>/lib/cmake/leptonica -DCMAKE_EXE_LINKER_FLAGS=-static -static-libgcc -static-libstdc++ -Wl,--no-insert-timestamp -L<prefix>/lib
